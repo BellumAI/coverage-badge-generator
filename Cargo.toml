@@ -1,0 +1,19 @@
+[package]
+name = "coverage-badge-generator"
+version = "0.1.0"
+authors = ["Eric DeLabar <edelabar@bellum.ai>"]
+edition = "2021"
+license-file = "LICENSE"
+readme = "README.md"
+description = "Generate an SVG code coverage badge from the command line"
+repository = "https://github.com/BellumAI/coverage-badge-generator"
+
+[profile.release]
+opt-level = 'z'
+lto = true
+panic = 'abort'
+
+[dependencies]
+clap = "~2.33"
+badge = "0.2.0"
+rust_decimal = "1.27.0"
