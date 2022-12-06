@@ -21,20 +21,14 @@ FLAGS:
     -V, --version    Prints version information
 
 OPTIONS:
-    -d, --decimal-places <decimal-places>
-            Number of decimal places to round PROJECT_COVERAGE_PERCENTAGE to [default: 1]
-
-        --failing-color <CSS_HEX_COLOR>                Bacground color for failing badge (e.g. red) [default: #e43]
-    -l, --label <label>                                Badge label [default: coverage]
+    -d, --decimal-places <DECIMAL_PLACES>              Decimal places to round coverage by [default: 1]
+    -b, --badge-label <label>                          Badge label [default: coverage]
     -o, --output <OUTPUT_FILE>                         The output file [default: badge.svg]
-        --passing-color <CSS_HEX_COLOR>                Bacground color for passing badge (e.g. green) [default: #3c1]
-    -p, --passing-percent <MIN_COVERAGE_PERCENTAGE>
-            Minimum Percentage for passing badge (Floating Point) [default: 95.0]
-
-        --warning-color <CSS_HEX_COLOR>                Bacground color for warning badge (e.g. yellow) [default: #db1]
-    -w, --warning-percent <MIN_COVERAGE_PERCENTAGE>
-            Minimum Percentage for warning badge (Floating Point) [default: 50.0]
-
+    -F, --failing-color <CSS_HEX_COLOR>                Color of failing badge (e.g. red) [default: #e43]
+    -W, --warning-color <CSS_HEX_COLOR>                Color of warning badge (e.g. yellow) [default: #db1]
+    -P, --passing-color <CSS_HEX_COLOR>                Color of passing badge (e.g. green) [default: #3c1]
+    -p, --passing-percent <MIN_COVERAGE_PERCENTAGE>    Min percentage for passing badge (Floating Point) [default: 95.0]
+    -w, --warning-percent <MIN_COVERAGE_PERCENTAGE>    Min percentage for warning badge (Floating Point) [default: 50.0]
 
 ARGS:
     <PROJECT_COVERAGE_PERCENTAGE>     Actual Coverage Percentage to display in the badge
