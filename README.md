@@ -4,9 +4,9 @@ A command-line badge generator for generic code coverage reports. Designed for u
 
 ## Example
 
-![green badge](assets/green-badge.svg)
-![yellow badge](assets/yellow-badge.svg)
-![red badge](assets/red-badge.svg)
+- `coverage-badge-generator 98.91`: ![green badge](assets/green-badge.svg)
+- `coverage-badge-generator 55.19`: ![yellow badge](assets/yellow-badge.svg)
+- `coverage-badge-generator 26.45`: ![red badge](assets/red-badge.svg)
 
 ## Usage
 
