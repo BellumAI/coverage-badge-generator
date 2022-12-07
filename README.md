@@ -2,11 +2,19 @@
 
 A command-line badge generator for generic code coverage reports. Designed for use in CI pipelines.
 
+## Installing
+
+This will install the executable in `./bin`.
+
+```
+$ cargo install --git https://github.com/BellumAI/coverage-badge-generator.git --root ./
+```
+
 ## Example
 
-- `coverage-badge-generator 98.91`: ![green badge](assets/green-badge.svg)
-- `coverage-badge-generator 55.19`: ![yellow badge](assets/yellow-badge.svg)
-- `coverage-badge-generator 26.45`: ![red badge](assets/red-badge.svg)
+- `$ coverage-badge-generator 98.91`: ![green badge](assets/green-badge.svg)
+- `$ coverage-badge-generator 55.19`: ![yellow badge](assets/yellow-badge.svg)
+- `$ coverage-badge-generator 26.45`: ![red badge](assets/red-badge.svg)
 
 ## Usage
 
@@ -34,6 +42,6 @@ ARGS:
     <PROJECT_COVERAGE_PERCENTAGE>     Actual Coverage Percentage to display in the badge
 ```
 
-## Shamelessly Stolen From
+## Inspired and Basically Forked From:
 
 [romainreignier/lcov_badge_generator](https://github.com/romainreignier/lcov_badge_generator)
